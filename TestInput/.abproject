@@ -2,7 +2,7 @@
   "ProjectName": "TestInput",
   "ProjectGuid": "a06a7122-988b-45a6-a5f5-753d5c0aa513",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.TestInput",
+  "AppIdentifier": "com.telerik.PushNotificationApp",
   "DisplayName": "TestInput",
   "Author": "",
   "Description": "TestInput",

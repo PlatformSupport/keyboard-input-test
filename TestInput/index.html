@@ -1,16 +1,83 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title></title>
-    <meta charset="utf-8" />
-    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
 
-    <script src="cordova.js"></script>
-    <script src="kendo/js/jquery.min.js"></script>
-    <script src="kendo/js/kendo.mobile.min.js"></script>
-    
-</head>
-<body>
-    
-</body>
+		<script src="cordova.js"></script>
+		<script src="kendo/js/jquery.min.js"></script>
+		<script src="kendo/js/kendo.mobile.min.js"></script>
+
+	</head>
+	<body>
+		<div data-role="view" id="login" data-model="model">
+			<form>
+				<ul data-role="listview" data-style="inset">
+					<li>
+						<label>
+							Username:
+							<input type="text" name="username" data-bind="value: name">
+						</label>
+					</li>
+					<li>
+						<label>
+							Email:
+							<input type="text" name="email" data-bind="value: email">
+						</label>
+					</li>
+					<li>
+						<label>
+							First Name:
+							<input type="text" name="password" data-bind="value: firstName">
+						</label>
+					</li>
+					<li>
+						<label>
+							Second Name:
+							<input type="text" name="password" data-bind="value: secondName">
+						</label>
+					</li>
+					<li>
+						<label>
+							School Name:
+							<input type="text" name="password" data-bind="value: schoolName">
+						</label>
+					</li>
+					<li>
+						<label>
+							Country Name:
+							<input type="text" name="password" data-bind="value: countryName">
+						</label>
+					</li>
+						<li>
+						<label>
+							Some Name:
+							<input type="text" name="password" data-bind="value: someName">
+						</label>
+					</li>
+					<li>
+						<label>
+							Other Name:
+							<input type="text" name="password" data-bind="value: otheName">
+						</label>
+					</li>
+				</ul>
+			</form>
+		</div>
+		<script>
+			new kendo.mobile.Application(document.body);
+			
+			var model = new kendo.observable({
+												 name: "my Name",
+												 email: "",
+												 firstName: "first Name",
+												 secondName: "",
+												 schoolName: "my school",
+												 countryName: "",
+												 someName: "",
+												 otherName: ""
+											 });
+		</script>
+	</body>
 </html>
