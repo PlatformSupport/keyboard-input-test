@@ -1,5 +1,6 @@
 {
   "CorePlugins": [
+    "com.ionic.keyboard@1.0.4",
     "org.apache.cordova.battery-status",
     "org.apache.cordova.camera",
     "org.apache.cordova.contacts",
